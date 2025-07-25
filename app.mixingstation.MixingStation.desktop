@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Mixing Station
+GenericName=Remote control app for a variety of digital mixers
+Icon=app.mixingstation.MixingStation
+Exec=run.sh
+Type=Application
+Categories=AudioVideo;Audio;

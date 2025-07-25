@@ -23,6 +23,8 @@ modules:
     build-commands:
       - unzip -d ${FLATPAK_DEST}/bin mixingstation.zip
       - install -Dm755 launcher.sh ${FLATPAK_DEST}/bin/run.sh
+      - install -Dm644 app.mixingstation.MixingStation.desktop /app/share/applications/app.mixingstation.MixingStation.desktop
+      - install -Dm644 app.mixingstation.MixingStation.png /app/share/icons/hicolor/256x256/apps/app.mixingstation.MixingStation.png
     sources:
       - type: file
         url: https://mixingstation.app/backend/api/web/download/update/mixing-station-pc/release
@@ -30,3 +32,7 @@ modules:
         dest-filename: mixingstation.zip
       - type: file
         path: launcher.sh
+      - type: file
+        path: app.mixingstation.MixingStation.desktop
+      - type: file
+        path: app.mixingstation.MixingStation.png
