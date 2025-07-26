@@ -4,7 +4,7 @@ runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk17
-command: /app/bin/run.sh
+command: run.sh
 finish-args:
   # X11/GPU access
   - --socket=x11
