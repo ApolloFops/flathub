@@ -28,6 +28,7 @@ modules:
     build-commands:
       - unzip -d ${FLATPAK_DEST}/bin mixingstation.zip
       - install -Dm755 launcher.sh ${FLATPAK_DEST}/bin/run.sh
+      - install -Dm644 app.mixingstation.MixingStation.metainfo.xml /app/share/metainfo/app.mixingstation.MixingStation.metainfo.xml
       - install -Dm644 app.mixingstation.MixingStation.desktop /app/share/applications/app.mixingstation.MixingStation.desktop
       - install -Dm644 app.mixingstation.MixingStation.png /app/share/icons/hicolor/256x256/apps/app.mixingstation.MixingStation.png
     sources:
@@ -37,6 +38,8 @@ modules:
         dest-filename: mixingstation.zip
       - type: file
         path: launcher.sh
+      - type: file
+        path: app.mixingstation.MixingStation.metainfo.xml
       - type: file
         path: app.mixingstation.MixingStation.desktop
       - type: file

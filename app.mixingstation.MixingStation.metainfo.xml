@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>app.mixingstation.MixingStation</id>
+  <name>Mixing Station</name>
+  <summary>Remote control app for a variety of digital mixers</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary</project_license>
+  <developer id="org.dev-core">
+    <name>David Schumann</name>
+  </developer>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+  <branding>
+    <color type="primary" scheme_preference="light">#1d4ed8</color>
+    <color type="primary" scheme_preference="dark">#5096e8</color>
+  </branding>
+  <description>
+    <p>
+      Mixing Station allows you to remote control digital mixers from various manufacturers in one unified UI.
+    </p>
+    <p>
+      The following models are supported:
+    </p>
+    <ul>
+      <li>Behringer X32 / M32</li>
+      <li>Behringer XAir / MR</li>
+      <li>Midas HD96</li>
+      <li>Behringer WING</li>
+      <li>A&amp;H dLive</li>
+      <li>A&amp;H Avantis</li>
+      <li>A&amp;H GLD</li>
+      <li>A&amp;H iLive</li>
+      <li>A&amp;H CQ</li>
+      <li>A&amp;H SQ</li>
+      <li>A&amp;H Qu</li>
+      <li>PreSonus StudioLive3</li>
+      <li>Soundcraft Si</li>
+      <li>Soundcraft Vi</li>
+      <li>Soundcraft Ui</li>
+      <li>Mackie DL32S/16S DL32R DL1608</li>
+      <li>Yamaha DM3 / DM7 / TF</li>
+    </ul>
+    <p>
+      Note: In app purchases are required for establishing a connection to the mixer. The offline mode can be tested without any payments.
+    </p>
+    <p>
+      Features:
+	  </p>
+    <ul>
+      <li>Fully customizable UI</li>
+      <li>Create unlimited DCAs (IDCAs)</li>
+      <li>Customizable layers, layouts, channel strip and app theme</li>
+      <li>RTA overlay in PEQ /GEQ view</li>
+      <li>Channel linking and relative ganging</li>
+      <li>Gain reduction history for gate and dynamics</li>
+      <li>Peak hold for all meters, editable hold times</li>
+      <li>MIDI support for external control</li>
+      <li>High contrast mode for outdoor usage</li>
+      <li>Popgroups</li>
+      <li>Routing Matrix</li>
+      <li>Up to 32 channels channels per layer</li>
+      <li>Mix copy</li>
+      <li>Mixer independent channel presets</li>
+      <li>FX presets</li>
+      <li>Feedback detection for ringing out wedges</li>
+      <li>More features available depending on the connected mixer model</li>
+      <li>Community feature for sharing presets, themes and more with other users</li>
+    </ul>
+    <p>
+      Note: This app is not a DAW! It does not play any audio! It is for remote controlling only.
+    </p>
+  </description>
+  <categories>
+    <category>Music</category>
+    <category>AudioVideo</category>
+  </categories>
+  <launchable type="desktop-id">app.mixingstation.MixingStation.desktop</launchable>
+  <url type="homepage">https://mixingstation.app/</url>
+  <url type="bugtracker">https://mixingstation.app/tasks/overview</url>
+  <url type="help">https://mixingstation.app/ms-docs/</url>
+  <url type="faq">https://mixingstation.app/ms-docs/faq/</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://mixingstation.app/mixing-station/assets/hero.webp</image>
+    </screenshot>
+    <screenshot>
+      <image>https://mixingstation.app/mixing-station/assets/layout-editor.jpg</image>
+    </screenshot>
+    <screenshot>
+      <image>https://mixingstation.app/mixing-station/assets/channel-view.jpg</image>
+    </screenshot>
+  </screenshots>
+    <content_rating type="oars-1.1">
+    <content_attribute id="money-purchasing">mild</content_attribute>
+  </content_rating>
+  <releases>
+    <release version="2.4.0" date="2025-07-20">
+      <url type="details">https://mixingstation.app/changelogs/desktop/2_4_0</url>
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>"Link" parameter for 76LA comp model</li>
+          <li>A&amp;H Qu5/6/7: Support for new mixer models</li>
+          <li>A&amp;H dLive: Support for firmware V2.11</li>
+          <li>Midas HD: Access to multiband compressors</li>
+          <li>Copy in MS scenes (T5651)</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>A&amp;H SQ: Ducker threshold not working</li>
+          <li>A&amp;H SQ: Global Tap Time not working</li>
+          <li>A&amp;H SQ: Opt-Tronik and Bus Compressor may not work (T5686)</li>
+          <li>Crash when using Waves FIT with mixer without channel colors</li>
+          <li>TouchMix: TM30: Sync not working (T5716)</li>
+          <li>Wing: Output routing can't be set to "None"</li>
+          <li>Wing: Width not visible for bus channels</li>
+          <li>Wing: main to matrix tap not working</li>
+          <li>MIDI Spill Action works for DCA but not IDCA (T5685)</li>
+          <li>Dyn8EQ Pinch gesture not working as expected (T5705)</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>Improved sends view</li>
+          <li>Make IDCAs selectable</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>
