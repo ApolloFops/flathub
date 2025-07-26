@@ -85,12 +85,15 @@
   <screenshots>
     <screenshot type="default">
       <image>https://mixingstation.app/mixing-station/assets/hero.webp</image>
+      <caption>A customized mixer UI.</caption>
     </screenshot>
     <screenshot>
       <image>https://mixingstation.app/mixing-station/assets/layout-editor.jpg</image>
+      <caption>The layout editor.</caption>
     </screenshot>
     <screenshot>
       <image>https://mixingstation.app/mixing-station/assets/channel-view.jpg</image>
+      <caption>The channel view.</caption>
     </screenshot>
   </screenshots>
     <content_rating type="oars-1.1">
