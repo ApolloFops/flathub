@@ -1,0 +1,37 @@
+id: io.github.zenithval.OSCLeash
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.dotnet8
+build-options:
+  prepend-path: "/usr/lib/sdk/dotnet8/bin"
+  append-ld-library-path: "/usr/lib/sdk/dotnet8/lib"
+  prepend-pkg-config-path: "/usr/lib/sdk/dotnet8/lib/pkgconfig"
+
+command: OSCLeash
+
+finish-args:
+  - --share=network
+  - --env=DOTNET_ROOT=/app/lib/dotnet
+
+modules:
+  - name: dotnet
+    buildsystem: simple
+    build-commands:
+    - /usr/lib/sdk/dotnet8/bin/install.sh
+
+  - name: OSCLeash
+    buildsystem: simple
+    sources:
+      - type: git
+        url: https://github.com/ZenithVal/OSCLeash.git
+        commit: 9c692c84a1ce31cc3bafbb2d92708804235a48ed
+      - type: patch
+        path: remove-openvr-dll.patch
+      - ./nuget-sources.json
+    build-commands:
+      - dotnet publish OSCLeash.csproj -c Release --no-self-contained --source ./nuget-sources
+      - mkdir -p ${FLATPAK_DEST}/bin
+      - cp -r bin/Release/net8.0/publish/* ${FLATPAK_DEST}/bin
+

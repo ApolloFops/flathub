@@ -1,0 +1,18 @@
+diff --git a/OSCLeash.csproj b/OSCLeash.csproj
+index 67f78b0..53a84ea 100644
+--- a/OSCLeash.csproj
++++ b/OSCLeash.csproj
+@@ -23,13 +23,6 @@
+     <PackageReference Include="VRChat.OSCQuery" Version="0.0.7" />
+   </ItemGroup>
+ 
+-  <ItemGroup>
+-    <None Include="Resources\openvr_api.dll">
+-      <Link>openvr_api.dll</Link>
+-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+-    </None>
+-  </ItemGroup>
+-
+   <ItemGroup>
+     <None Update="config.json">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
