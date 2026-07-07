@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=OSCLeash
+Exec=OSCLeash
+Type=Application
+Comment=VRChat OSC tool to move a player in the direction of a stretched Physbone.
+Terminal=true
+Icon=io.github.zenithval.OSCLeash
+Categories=Game;

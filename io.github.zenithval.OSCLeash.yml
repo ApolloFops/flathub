@@ -34,9 +34,12 @@ modules:
         path: io.github.zenithval.OSCLeash.metainfo.xml
       - type: file
         path: io.github.zenithval.OSCLeash.png
+      - type: file
+        path: io.github.zenithval.OSCLeash.desktop
     build-commands:
       - dotnet publish OSCLeash.csproj -c Release --no-self-contained --source ./nuget-sources
       - mkdir -p ${FLATPAK_DEST}/bin
       - cp -r bin/Release/net8.0/publish/* ${FLATPAK_DEST}/bin
       - install -Dm 644 ${FLATPAK_ID}.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml
       - install -Dm 644 ${FLATPAK_ID}.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
+      - install -Dm 644 ${FLATPAK_ID}.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
