@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="console-application">
+	<id>io.github.zenithval.OSCLeash</id>
+
+	<name>OSCLeash</name>
+	<summary>VRChat OSC tool to move a player in the direction of a stretched Physbone.</summary>
+	<content_rating type="oars-1.1" />
+
+	<developer id="com.zenithval">
+		<name>ZenithVal</name>
+	</developer>
+
+	<metadata_license>FSFAP</metadata_license>
+	<project_license>MIT</project_license>
+
+	<url type="homepage">https://github.com/ZenithVal/OSCLeash</url>
+
+	<description>
+		<p>
+			A VRChat OSC tool to move a player in the direction of a stretched Physbone.
+			For leashes, tails, or even hand holding!
+		</p>
+	</description>
+
+	<icon type="stock">io.github.zenithval.OSCLeash</icon>
+
+	<categories>
+		<category>Utility</category>
+		<category>Game</category>
+	</categories>
+
+	<provides>
+		<binary>OSCLeash</binary>
+	</provides>
+
+	<releases>
+		<release version="v2.2.0" date="2024-10-05">
+			<description>
+				<ul>
+					<li>
+						Converted Constraints to VRC Constraints &amp; added
+						info on cross-platform support by @korbykob in #30
+					</li>
+					<li>
+						Add OSCQuery support (for parameter receiving from
+						VRChat) by @cyberkitsune in #27
+					</li>
+				</ul>
+			</description>
+		</release>
+	</releases>
+</component>
