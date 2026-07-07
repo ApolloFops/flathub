@@ -1,4 +1,4 @@
-id: io.github.zenithval.OSCLeash
+id: com.zenithval.OSCLeash
 runtime: org.freedesktop.Platform
 runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
@@ -31,11 +31,11 @@ modules:
         path: remove-openvr-dll.patch
       - ./nuget-sources.json
       - type: file
-        path: io.github.zenithval.OSCLeash.metainfo.xml
+        path: com.zenithval.OSCLeash.metainfo.xml
       - type: file
-        path: io.github.zenithval.OSCLeash.png
+        path: com.zenithval.OSCLeash.png
       - type: file
-        path: io.github.zenithval.OSCLeash.desktop
+        path: com.zenithval.OSCLeash.desktop
     build-commands:
       - dotnet publish OSCLeash.csproj -c Release --no-self-contained --source ./nuget-sources
       - mkdir -p ${FLATPAK_DEST}/bin

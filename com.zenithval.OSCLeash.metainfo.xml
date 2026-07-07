@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="console-application">
-	<id>io.github.zenithval.OSCLeash</id>
+	<id>com.zenithval.OSCLeash</id>
 
 	<name>OSCLeash</name>
 	<summary>VRChat OSC tool to move a player in the direction of a stretched Physbone.</summary>
@@ -22,7 +22,7 @@
 		</p>
 	</description>
 
-	<icon type="stock">io.github.zenithval.OSCLeash</icon>
+	<icon type="stock">com.zenithval.OSCLeash</icon>
 
 	<categories>
 		<category>Utility</category>
